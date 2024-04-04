@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B1887;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 32px;
+    background-color: #D5CCFF;
+    width: 500px;
+    margin-top: 40px;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.title i,
+.title p,
+.wrap p {
+    font-size: 32px;
+    color: #2B1887;
+    font-weight: 700;
+}
+
+.title i {
+    margin-top: 35px;
+    margin-right: 5px;
+}
+
+
+.addTaskBtn {
+    background-color: #735EFA;
+    color: #2B1887;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addTaskBtn:hover {
+    background-color: #2C43DD;
+    color: white;
+}
+
+
+textarea {
+    position: relative;
+    resize: none;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+textarea:focus {
+    outline: none;
+    border: 3px solid #2B1887;
+}
+
+#tooltip {
+    display: none;
+    position: absolute;
+    margin-top: 40px;
+    background-color: #2a188794;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#tooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+
+}
+
+textarea:focus #tooltip {
+    display: none;
+}
+
+
+#note {
+    display: block;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.listTask li {
+    margin-left: -40px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 12px;
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.listTask li .taskName {
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+}
+
+.listTask li .editTaskBtn,
+.listTask li .removeTaskBtn {
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    background-color: #735EFA;
+    color: #2B1887;
+    cursor: pointer;
+}
+
+.listTask li .editTaskBtn:hover {
+    background-color: rgb(173, 114, 4);
+    color: white;
+}
+
+.listTask li .removeTaskBtn:hover {
+    background-color: rgb(149, 2, 2);
+    color: white;
+}
+
+.removeAllTaskBtn {
+    width: 200px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    background-color: #735EFA;
+    color: #2B1887;
+    cursor: pointer;
+    display: none;
+}
+
+.removeAllTaskBtn:hover {
+    background-color: rgb(149, 2, 2);
+    color: white;
+}

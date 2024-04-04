@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List </title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="task-management.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="title center">
+            <i class='bx bx-notepad'></i>
+            <p>To-Do</p>
+        </div>
+
+        <div class="addTask center">
+            <textarea name="content" id="addTaskContent" cols="25" rows="1"></textarea>
+            <div id="tooltip">Please input task here!</div>
+            <button class="addTaskBtn">+</button>
+        </div>
+
+        <p class="center">List Tasks</p>
+
+        <div class=" listTask center">
+            <div id="note">No Task Here</div>
+            <ul>
+                <div id="content"></div>
+            </ul>
+        </div>
+
+        <button class="removeAllTaskBtn">Remove All Tasks</i></button>
+
+    </div>
+
+
+    <script src="task-management.js"></script>
+</body>
+
+</html>
